@@ -18,6 +18,8 @@ body {
     margin-top: 50px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
+    background: transparent;
+    z-index: 100;
     color: #ccc;
     display: flex;
     justify-content: space-between;
@@ -41,9 +43,11 @@ body {
     margin: 0px 10px;
 }
 
-.down-arrow {
-    margin-left: 5px;
+.arrow::before {
+    content: "▼";
+    color: inherit;
     font-size: 12px;
+    margin-left: 5px;
 }
 
 .dropdown {
@@ -81,6 +85,13 @@ body {
     border-bottom: solid 1px #fff;
 }
 
+.product:hover .arrow::before {
+    content: "▲";
+    color: inherit;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
 .product:hover .dropdown {
     display: block;
 }
@@ -90,6 +101,13 @@ body {
     border-bottom: solid 1px #fff;
 }
 
+.company:hover .arrow::before {
+    content: "▲";
+    color: inherit;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
 .company:hover .dropdown {
     display: block;
 }
@@ -97,6 +115,13 @@ body {
 .connect:hover .content {
     color: #fff;
     border-bottom: solid 1px #fff;
+}
+
+.connect:hover .arrow::before {
+    content: "▲";
+    color: inherit;
+    margin-left: 5px;
+    font-size: 12px;
 }
 
 .connect:hover .dropdown {
@@ -127,4 +152,12 @@ body {
 .signUp:hover {
     color: #fff;
     background-color: hsl(355, 100%, 74%);
+}
+
+
+
+
+.banner {
+    position: absolute;
+    top: 0;
 }
