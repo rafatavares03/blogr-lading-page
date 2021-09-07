@@ -7,10 +7,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #000;
-}
-
 .header {
     width: 100vw;
     max-width: 1000px;
@@ -19,7 +15,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     background: transparent;
-    z-index: 100;
     color: #ccc;
     display: flex;
     justify-content: space-between;
@@ -159,5 +154,10 @@ body {
 
 .banner {
     position: absolute;
+    height: 90vh;
+    width: 100vw;
     top: 0;
+    background-image: url(../images/bg-pattern-intro.svg);
+    background-position: 26% 52%;
+    z-index: -10;
 }
