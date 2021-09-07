@@ -86,7 +86,7 @@ h1.logo {
 
 .product:hover .arrow::before {
     content: "▲";
-    color: inherit;
+    color: #fff;
     margin-left: 5px;
     font-size: 12px;
 }
@@ -102,7 +102,7 @@ h1.logo {
 
 .company:hover .arrow::before {
     content: "▲";
-    color: inherit;
+    color: #fff;
     margin-left: 5px;
     font-size: 12px;
 }
@@ -118,7 +118,7 @@ h1.logo {
 
 .connect:hover .arrow::before {
     content: "▲";
-    color: inherit;
+    color: #fff;
     margin-left: 5px;
     font-size: 12px;
 }
@@ -167,7 +167,7 @@ h1.logo {
     height: 93vh;
     width: 100vw;
     top: 0;
-    background: linear-gradient(90deg, rgba(255,143,112,1) 0%, rgba(255,61,84,1) 100%);
+    background: linear-gradient(90deg, #ff8f70 0%, #ff3d54 100%);
     border-bottom-left-radius: 80px;
     z-index: -10;
 }
@@ -222,9 +222,19 @@ h1.logo {
     background-color: #fff;
 }
 
+.start:hover {
+    color: #fff;
+    background-color: #ff7a85;
+}
+
 .buttons .learn {
     padding: 15px 20px;
     background: transparent;
     color: #fff;
     border: solid 1px #fff;
+}
+
+.learn:hover {
+    background-color: #fff;
+    color: #ff7a85;
 }
