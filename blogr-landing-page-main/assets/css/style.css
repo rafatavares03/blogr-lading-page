@@ -7,6 +7,36 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+/* Default styles */
+
+.texts {
+    max-width: 550px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.texts h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f3f5b;
+    margin-bottom: 30px;
+}
+
+.texts p {
+    color: #4b5862;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.texts p:first-of-type {
+    margin-bottom: 70px;
+}
+
+/* End */
+
 .header {
     width: 100vw;
     max-width: 1100px;
@@ -238,3 +268,28 @@ h1.logo {
     background-color: #fff;
     color: #ff7a85;
 }
+
+
+
+
+.design-info {
+    height: 100vh;
+    margin-top: 100vh;
+    position: relative;
+}
+
+.design-container {
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+
+h1.title {
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #1f3f5b;
+}
+
+.
