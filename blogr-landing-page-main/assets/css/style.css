@@ -26,6 +26,7 @@ body {
 }
 
 .texts p {
+    font-weight: 300;
     color: #4b5862;
     font-size: 16px;
     line-height: 30px;
@@ -57,7 +58,7 @@ body {
 }
 
 h1.logo {
-    margin: 0px 40px;
+    margin-right:40px;
     font-family: Arial, sans-serif;
     font-size: 40px;
     color: #fff;
@@ -73,7 +74,7 @@ h1.logo {
 }
 
 .arrow::before {
-    content: "▼";
+    content: url(../images/icon-arrow-light.svg);
     color: inherit;
     font-size: 12px;
     margin-left: 5px;
@@ -114,13 +115,6 @@ h1.logo {
     border-bottom: solid 1px #fff;
 }
 
-.product:hover .arrow::before {
-    content: "▲";
-    color: #fff;
-    margin-left: 5px;
-    font-size: 12px;
-}
-
 .product:hover .dropdown {
     display: block;
 }
@@ -130,13 +124,6 @@ h1.logo {
     border-bottom: solid 1px #fff;
 }
 
-.company:hover .arrow::before {
-    content: "▲";
-    color: #fff;
-    margin-left: 5px;
-    font-size: 12px;
-}
-
 .company:hover .dropdown {
     display: block;
 }
@@ -144,13 +131,6 @@ h1.logo {
 .connect:hover .content {
     color: #fff;
     border-bottom: solid 1px #fff;
-}
-
-.connect:hover .arrow::before {
-    content: "▲";
-    color: #fff;
-    margin-left: 5px;
-    font-size: 12px;
 }
 
 .connect:hover .dropdown {
@@ -247,12 +227,12 @@ h1.logo {
     font-weight: bold;
 }
 
-.start {
+.buttons .start {
     color: #ff525d;
     background-color: #fff;
 }
 
-.start:hover {
+.buttons a.start:hover {
     color: #fff;
     background-color: #ff7a85;
 }
@@ -264,7 +244,7 @@ h1.logo {
     border: solid 1px #fff;
 }
 
-.learn:hover {
+.buttons a.learn:hover {
     background-color: #fff;
     color: #ff7a85;
 }
@@ -273,8 +253,10 @@ h1.logo {
 
 
 .design-info {
-    height: 100vh;
-    margin-top: 100vh;
+    height: 140vh;
+    margin-top: 80vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     position: relative;
 }
 
@@ -287,9 +269,17 @@ h1.logo {
 h1.title {
     text-align: center;
     font-family: 'Overpass', sans-serif;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 600;
     color: #1f3f5b;
 }
 
-.
+.design-content {
+    margin-top: 100px;
+}
+
+.illustration {
+    position: absolute;
+    margin-left: 50vw;
+    top: 20px;
+}
