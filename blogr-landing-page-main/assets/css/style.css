@@ -284,6 +284,10 @@ h1.title {
 
 
 
+.art {
+    position: relative;
+}
+
 .art-container {
     width: 100%;
     max-width: 1140px;
@@ -304,4 +308,23 @@ h1.title {
 .art-content .texts h1,
 .art-content .texts p {
     color: #fff;
+}
+
+.art-bg {
+    position: absolute;
+    z-index: -10;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: calc(100% - 180px);
+    background-color: #26273d;
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+.art-bg-img {
+    height: 100%;
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-position: -60% 80%;
+    background-repeat: no-repeat;
 }
