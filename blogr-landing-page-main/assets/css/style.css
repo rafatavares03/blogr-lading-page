@@ -39,6 +39,7 @@ body {
 /* End */
 
 .header {
+    position: relative;
     width: 100vw;
     max-width: 1100px;
     margin: auto;
@@ -50,6 +51,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    z-index: 10;
 }
 
 .contents-container {
@@ -176,7 +178,6 @@ body {
     top: 0;
     background: linear-gradient(90deg, #ff8f70 0%, #ff3d54 100%);
     border-bottom-left-radius: 80px;
-    z-index: -10;
 }
 
 .bg-banner {
@@ -327,4 +328,26 @@ h1.title {
     background-image: url(../images/bg-pattern-circles.svg);
     background-position: -60% 80%;
     background-repeat: no-repeat;
+}
+
+
+
+
+.info {
+    position: relative;
+    padding-bottom: 200px;
+}
+
+.laptop-illustration {
+    position: absolute;
+    left: -275px;
+}
+
+.info-content {
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 200px;
 }
