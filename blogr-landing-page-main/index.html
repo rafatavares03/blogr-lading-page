@@ -14,7 +14,11 @@
             <img src="assets/images/logo.svg" class="logo"/>
             <div class="contents">
                 <nav class="product">
-                    <span class="content">Product</span> <em class="arrow"></em>
+                    <span class="content">Product</span> 
+                    <picture class="arrow">
+                        <source srcset="assets/images/icon-arrow-light.svg" media="(min-width: 600px)"/>
+                        <img src="assets/images/icon-arrow-dark.svg"/>
+                    </picture>
                     <ul class="dropdown">
                         <li>Overview</li>
                         <li>Pricing</li>
@@ -24,7 +28,11 @@
                     </ul>
                 </nav>
                 <nav class="company">
-                    <span class="content">Company</span> <em class="arrow"></em>
+                    <span class="content">Company</span> 
+                    <picture>
+                        <source srcset="assets/images/icon-arrow-light.svg" class="arrow" media="(min-width: 600px)"/>
+                        <img src="assets/images/icon-arrow-dark.svg" class="arrow"/>
+                    </picture>
                     <ul class="dropdown">
                         <li>About</li>
                         <li>Team</li>
@@ -33,7 +41,11 @@
                     </ul>
                 </nav>
                 <nav class="connect">
-                    <span class="content">Connect</span> <em class="arrow"></em>
+                    <span class="content">Connect</span> 
+                    <picture class="arrow">
+                        <source srcset="assets/images/icon-arrow-light.svg" media="(min-width: 600px)"/>
+                        <img src="assets/images/icon-arrow-dark.svg"/>
+                    </picture>
                     <ul class="dropdown">
                         <li>Contact</li>
                         <li>Newsletter</li>
@@ -128,7 +140,7 @@
         <div class="footer-container">
             <img src="assets/images/logo.svg" alt="Logo">
             <div class="footer-items">
-                <div>
+                <div class="footer-item">
                     <p>Product</p>
                     <ul>
                         <li><a href="#">Overview</a></li>
@@ -138,7 +150,7 @@
                         <li><a href="#">Integrations</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer-item">
                     <p>Company</p>
                     <ul>
                         <li><a href="#">About</a></li>
@@ -147,7 +159,7 @@
                         <li><a href="#">Careers</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="footer-item">
                     <p>Connect</p>
                     <ul>
                         <li><a href="#">Contact</a></li>
