@@ -8,7 +8,6 @@
 }
 
 body {
-    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -168,6 +167,23 @@ body {
     background-color: #ff7a85;
 }
 
+.open-menu {
+    height: 30px;
+    width: 30px;
+    background-image: url(../images/icon-hamburger.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.close-menu {
+    height: 30px;
+    width: 30px;
+    background-image: url(../images/icon-close.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 
 
@@ -256,6 +272,8 @@ body {
     padding-top: 20vh;
     padding-bottom: 20vh;
     position: relative;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .design-container {
@@ -407,6 +425,9 @@ h1.title {
 
 
 @media (max-width: 1200px){
+    .texts {
+        padding: 0px 40px;
+    }
 
     .header {
         padding: 0px 40px;
@@ -419,16 +440,9 @@ h1.title {
     }
 
 
-
     .design-info {
         padding-top: 30px;
         padding-bottom: 30px;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .texts {
-        padding: 0px 40px;
     }
 
     .illustration {
@@ -442,10 +456,12 @@ h1.title {
         height: auto;
     }
 
+
     .art-bg-img {
         background-size: 80%;
         background-position: -90% 80%;
     }
+
 
     .laptop-illustration {
         left: -120px;
@@ -458,5 +474,16 @@ h1.title {
 
     .footer-container {
         padding: 0px 40px;
+    }
+}
+
+@media(max-width: 900px) {
+    .header .contents,
+    .header .login-area {
+        display: none;
+    }
+
+    .open-menu {
+        display: block;
     }
 }
