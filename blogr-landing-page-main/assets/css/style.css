@@ -267,7 +267,7 @@ body {
 
 
 .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 100vh;
     width: 100vw;
@@ -287,6 +287,36 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.menu-contents nav {
+    width: 95vw;
+    text-align: center;
+}
+
+.menu-content {
+    display: inline-block;
+    margin: 15px 0px;
+}
+
+.menu-content.active {
+    color: #3f4164dd;
+}
+
+.menu-dropdown {
+    position: relative;
+    margin: 0px 10px;
+    padding: 20px 0px;
+    font-size: 15px;
+    background-color: #eee;
+    color: #3f4164dd;
+    display: none;
+}
+
+.menu-dropdown li {
+    list-style: none;
+    padding: 10px 0px;
+    cursor: pointer;
 }
 
 
