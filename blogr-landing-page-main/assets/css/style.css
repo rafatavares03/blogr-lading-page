@@ -168,7 +168,7 @@ body {
 }
 
 .open-menu {
-    height: 30px;
+    height: 20px;
     width: 30px;
     background-image: url(../images/icon-hamburger.svg);
     background-size: cover;
@@ -177,7 +177,7 @@ body {
 }
 
 .close-menu {
-    height: 30px;
+    height: 20px;
     width: 30px;
     background-image: url(../images/icon-close.svg);
     background-size: cover;
@@ -564,12 +564,118 @@ h1.title {
 }
 
 @media(max-width: 900px) {
+    .texts {
+        text-align: center;
+    }
+
+
     .header .contents,
     .header .login-area {
         display: none;
     }
 
+    .contents-container {
+        align-items: center;
+    }
+
+    .logo {
+        height: 40px;
+        width: auto;
+    }
+
     .open-menu {
         display: block;
+    }
+
+
+    .banner-content h1 {
+        font-size: 45px;
+    }
+
+
+    .design-info {
+        min-height: 140vh;
+        height: auto;
+    }
+
+    .design-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 450px;
+    }
+
+    .illustration {
+        right: 0;
+        left: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .art {
+        margin-bottom: 50px;
+    }
+
+    .art-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .art-bg {
+        top: 30%;
+        bottom: 0;
+        height: auto;
+    }
+
+    .art-bg-img {
+        background-position: 50% -25vh;
+    }
+
+
+    .info {
+        padding-bottom: 100px;
+    }
+
+    .laptop-illustration {
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-content {
+        padding-top: 400px;
+        justify-content: center;
+    }
+
+    
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-container > img {
+        margin-bottom: 80px;
+    }
+
+    .footer-items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer-item ul {
+        margin-bottom: 50px;
+    }
+
+    .footer-items:last-of-type ul {
+        margin-bottom: 0;
     }
 }
