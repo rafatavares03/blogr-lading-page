@@ -194,6 +194,7 @@ body {
     top: 0;
     background: linear-gradient(90deg, #ff8f70 0%, #ff3d54 100%);
     border-bottom-left-radius: 80px;
+    overflow: hidden;
 }
 
 .bg-banner {
@@ -427,12 +428,13 @@ h1.title {
     background-color: #2e2f49;
     border-bottom-left-radius: 80px;
     border-top-right-radius: 80px;
+    overflow: hidden;
 }
 
 .art-bg-img {
     height: 100%;
     background-image: url(../images/bg-pattern-circles.svg);
-    background-position: -65% 80%;
+    background-position: -55% 80%;
     background-repeat: no-repeat;
 }
 
@@ -510,6 +512,114 @@ h1.title {
 
 
 
+@media (min-width: 2000px) {
+    .texts h1 {
+        font-size: 35px;
+    }
+
+    .texts p {
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+
+    .header,
+    .design-container,
+    .art-container,
+    .info-content,
+    .footer-container {
+        max-width: 1440px;
+    }
+
+    .content {
+        font-size: 23px;
+    }
+
+    .dropdown li {
+        font-size: 23px;
+    }
+
+    .login-area a {
+        font-size: 23px;
+    }
+
+    .singUp {
+        border-radius: 20px;
+    }
+
+
+    .banner-content h1 {
+        font-size: 100px;
+    }
+
+    .banner-content p {
+        font-size: 45px;
+    }
+
+    .buttons a {
+        font-size: 30px;
+        padding: 15px 25px;
+        border-radius: 35px;
+    }
+
+
+    .design-info {
+        height: auto;
+        margin-top: 90vh;
+        padding: 30px 0px;
+    }
+
+    h1.title {
+        font-size: 50px;
+    }
+
+    .illustration {
+        top: 100px;
+    }
+
+
+    .art {
+        margin-top: 50px;
+    }
+
+    .art-content .texts h1 {
+        font-size: 45px;
+    }
+
+    .art-content .texts p {
+        font-size: 25px;
+        line-height: 42px;
+    }
+
+    .art-bg-img {
+        background-size: 75%;
+    }
+
+
+    .laptop-illustration {
+        top: 120px;
+        left: 50px;
+    }
+
+
+    .footer-container img {
+        width: 150px;
+        height: auto;
+    }
+    
+    .footer-items {
+        margin-left: 350px;
+    }
+
+    .footer-item p {
+        font-size: 27px;
+    }
+
+    .footer-item ul li {
+        font-size: 22px;
+    }
+}
+
 @media (max-width: 1200px){
     .texts {
         padding: 0px 40px;
@@ -572,6 +682,10 @@ h1.title {
     .header .contents,
     .header .login-area {
         display: none;
+    }
+
+    .bg-banner {
+        background-position: 45% 46%;
     }
 
     .contents-container {
@@ -674,8 +788,82 @@ h1.title {
     .footer-item ul {
         margin-bottom: 50px;
     }
+}
 
-    .footer-items:last-of-type ul {
-        margin-bottom: 0;
+@media(max-width: 500px) {
+    .bg-banner {
+        background-size: 300%;
+        background-position: 40% 45%;
+    }
+
+    .banner-content {
+        padding: 0px 40px;
+    }
+
+    .banner-content h1 {
+        font-size: 30px;
+    }
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+
+    h1.title {
+        font-size: 25px;
+    }
+
+    .illustration > img,
+    .laptop-illustration > img {
+        width: 95vw;
+        height: auto;
+    }
+
+    .design-content {
+        margin-top: 400px;
+    }
+
+
+    .cellphones {
+        width: 90vw;
+        height: auto;
+    }
+
+    .art-content .texts h1 {
+        font-size: 35px;
+    }
+
+    .art-bg-img {
+        background-size: 150%;
+        background-position: 50% -60vh;
+    }
+
+    .info-content {
+        padding-top: 350px; 
+    }
+}
+
+@media(max-width: 350px) {
+    .bg-banner {
+        background-size: 400%;
+        background-position: 37% 45%;
+    }
+
+    .banner-content {
+        padding: 0px 10px;
+    }
+
+
+    .design-content {
+        margin-top: 350px;
+    }
+
+    .art-bg {
+        top: 20%;
+    }
+
+    .art-bg-img {
+        background-size: 170%;
+        background-position: 50% -40vh;
     }
 }
