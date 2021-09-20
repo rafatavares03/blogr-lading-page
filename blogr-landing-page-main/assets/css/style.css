@@ -71,6 +71,7 @@ body {
 
 .contents > nav {
     margin: 0px 10px;
+    min-width: 90px;
 }
 
 .arrow {
@@ -180,7 +181,7 @@ body {
     height: 20px;
     width: 30px;
     background-image: url(../images/icon-close.svg);
-    background-size: cover;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
 }
 
@@ -276,6 +277,10 @@ body {
     display: none;
 }
 
+.mobile-menu.isOpen {
+    display: block;
+}
+
 .menu-container {
     margin: 150px 20px 20px 20px;
     height: calc(100vh - 170px);
@@ -292,6 +297,11 @@ body {
 }
 
 .menu-contents {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-bottom: solid 1px #e9e9e9;
 }
 
@@ -302,7 +312,7 @@ body {
 
 .menu-content {
     display: inline-block;
-    margin: 15px 0px;
+    margin: 10px 0px;
 }
 
 .menu-content.active {
@@ -434,7 +444,7 @@ h1.title {
 .art-bg-img {
     height: 100%;
     background-image: url(../images/bg-pattern-circles.svg);
-    background-position: -55% 80%;
+    background-position: -65% 80%;
     background-repeat: no-repeat;
 }
 
@@ -843,7 +853,7 @@ h1.title {
     }
 }
 
-@media(max-width: 350px) {
+@media(max-width: 400px) {
     .bg-banner {
         background-size: 400%;
         background-position: 37% 45%;
