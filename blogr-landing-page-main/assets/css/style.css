@@ -282,8 +282,8 @@ body {
 }
 
 .menu-container {
-    margin: 150px 20px 20px 20px;
-    height: calc(100vh - 170px);
+    margin: 140px 20px 20px 20px;
+    height: calc(100vh - 160px);
     width: calc(100vw - 40px);
     background-color: #fff;
     border-radius: 3px;
@@ -321,22 +321,26 @@ body {
 
 .menu-dropdown {
     position: relative;
-    margin: 0px 10px;
-    padding: 20px 0px;
+    width: 75%;
+    margin: auto;
     font-size: 15px;
     background-color: #eee;
     color: #3f4164dd;
     display: none;
 }
 
+.menu-dropdown.open {
+    display: block;
+}
+
 .menu-dropdown li {
     list-style: none;
-    padding: 10px 0px;
+    padding: 5px 0px;
     cursor: pointer;
 }
 
 .menu-login-area {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -355,7 +359,7 @@ body {
     font-size: 15px;
     color: #fff;
     padding: 13px 38px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 23px;
     background: linear-gradient(90deg, #ff8f70 0%, #ff3d54 100%);
 }

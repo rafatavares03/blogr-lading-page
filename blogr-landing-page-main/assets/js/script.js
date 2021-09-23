@@ -12,4 +12,47 @@ document.querySelector('#menu').addEventListener('click', (e) => {
 
         e.target.classList.remove('isOpen');
     }
-})
+});
+
+document.querySelector('#product').addEventListener('click', (e) => {
+    const element = e.target;
+    OpenDropdown(element);
+});
+
+document.querySelector('#company').addEventListener('click', (e) => {
+    const element = e.target;
+    OpenDropdown(element);
+});
+
+document.querySelector('#connect').addEventListener('click', (e) => {
+    const element = e.target;
+    OpenDropdown(element);
+});
+
+
+
+function OpenDropdown(element) {
+    if(!element.classList.contains('active')) {
+        const navParent = element.parentElement;
+        const dropdown = navParent.lastElementChild;
+        element.classList.add('active');
+        dropdown.classList.add('open');
+    } else {
+        CloseDropdown();
+    }
+}
+
+function CloseDropdown() {
+    const contents = document.querySelectorAll('.menu-content');
+    const dropdowns = document.querySelectorAll('.menu-dropdown');
+
+    for( let i = 0; i < contents.length; i++) {
+        if (contents[i].classList.contains('active')){
+            contents[i].classList.remove('active');
+        }
+        
+        if (dropdowns[i].classList.contains('open')) {
+            dropdowns[i].classList.remove('open');
+        }
+    }
+}
