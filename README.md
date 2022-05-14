@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img alt="screenshot" title="screenshot" src="blogr-landing-page-main/assets/screenshot/screenshot.png"></img>
+<img alt="screenshot" title="screenshot" src="./assets/screenshot/screenshot.png"></img>
 
 ### Links
 
